@@ -1,25 +1,16 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import { Tabs, Tab } from 'react-bootstrap';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Tabs defaultActiveKey="profile" id="uncontrolled-tab-example">
+      <Tab eventKey="start" title="Start Workout" disabled>
+      </Tab>
+      <Tab eventKey="profile" title="Profile">
+      </Tab>
+      <Tab eventKey="history" title="History">
+      </Tab>
+    </Tabs>
   );
 }
 
